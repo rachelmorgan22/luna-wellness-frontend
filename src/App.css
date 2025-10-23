@@ -1,0 +1,37 @@
+/* App.css – keep it minimal, let Tailwind + index.css handle most styling */
+
+.App {
+  text-align: center;
+}
+
+/* Hero overrides */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #F5F2E7, #FFFFFF);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #ECECEC;
+  color: #555;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+
+
+

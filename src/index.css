@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Existing animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes float-slow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes float-fast {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Tailwind utilities for animation */
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+.animate-float-fast { animation: float-fast 4s ease-in-out infinite; }
+
+/* ------------------ Zen Theme Styles ------------------ */
+
+/* Base Layer */
+@layer base {
+  body {
+    @apply leading-relaxed;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F5F2E7; /* earthy beige */
+    color: #2F4F4F; /* deep forest green */
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-repeat: repeat;
+
+    padding-top: 64px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-[#2F4F4F];
+  }
+
+  a {
+    @apply transition;
+    color: #2F4F4F;
+  }
+  a:hover {
+    color: #A8BCA1; /* sage green */
+  }
+
+  input, textarea {
+    @apply rounded-md px-3 py-2;
+    background-color: #ECECEC; /* soft gray */
+    color: #2F4F4F;
+  }
+}
+
+/* Components */
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-full shadow-md transition;
+    background-color: #A8BCA1; /* sage green */
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #7A5C44; /* warm brown */
+  }
+
+  .card {
+    @apply p-6 rounded-lg shadow-md transition;
+    background: rgba(255,255,255,0.8); /* translucent over texture */
+  }
+}
+
+
+
+
+
+
