@@ -7,7 +7,7 @@ export default function Signup() {
     classType: "",
   });
 
-  const [success, setSuccess] = useState("");
+  const [success] = useState("");
 
   const classes = ["Morning Flow", "Restorative Yoga", "Power Vinyasa"];
 
